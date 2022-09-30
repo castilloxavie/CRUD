@@ -70,5 +70,5 @@ def update_form(request, task_id):
 def delete(request, task_id):
     db_data = task.objects.filter(id=task_id)
     db_data.delete()
-    return HttpResponseRedirect(reverse("index"))
+    return HttpResponseRedirect(reverse("index")) 
 
